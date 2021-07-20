@@ -21,7 +21,10 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(
+          widget.title,
+          style: GoogleFonts.gloriaHallelujah(),
+        ),
         backgroundColor: Colors.grey,
       ),
       body: Container(
@@ -41,8 +44,8 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
                     children: [
                       Center(
                         child: SelectableText(
-                          "Helooooo",
-                          style: GoogleFonts.aBeeZee(),
+                          "Helooooo!",
+                          style: GoogleFonts.sacramento(fontSize: 60),
                         ),
                       ),
                       SizedBox(
@@ -60,7 +63,10 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
                             children: [
                               Icon(Icons.close),
                               SizedBox(width: 10),
-                              Text("SAIR DO APP"),
+                              Text(
+                                "SAIR DO APP",
+                                style: GoogleFonts.gloriaHallelujah(),
+                              ),
                             ],
                           ),
                         ),
